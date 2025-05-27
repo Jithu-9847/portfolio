@@ -22,7 +22,7 @@ const projects = [
     tech: ['Telegram Bot API', 'Node.js', 'Firebase Firestore'],
     image: 'bot.png',
     github: 'https://github.com/yourname/note-nest-bot',
-    demo: 'https://t.me/NoteNestBot',
+    demo: 'https://t.me/Note_Ninja_7306_bot',
   },
 ];
 
