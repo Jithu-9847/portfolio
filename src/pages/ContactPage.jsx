@@ -152,7 +152,7 @@ const ContactPage = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://linkedin.com/in/jithugirish1"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#1a1a1a] w-12 h-12 rounded-full flex items-center justify-center text-[#7f5af0] border border-[#333333] hover:border-[#7f5af0] transition-colors duration-300"
@@ -163,7 +163,7 @@ const ContactPage = () => {
                 </motion.a>
                 
                 <motion.a
-                  href="https://twitter.com/yourusername"
+                  href="https://instagram.com/jithu_girish_"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#1a1a1a] w-12 h-12 rounded-full flex items-center justify-center text-[#7f5af0] border border-[#333333] hover:border-[#7f5af0] transition-colors duration-300"

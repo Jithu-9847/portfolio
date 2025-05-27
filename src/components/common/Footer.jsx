@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiInstagram } from 'react-icons/fi';
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
         {/* Right - Social Links */}
         <div className="flex items-center space-x-6">
           <motion.a 
-            href="https://github.com/yourgithub" 
+            href="https://github.com/Jithu-9847" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-headline hover:text-primary transition-colors duration-300"
@@ -29,7 +29,7 @@ const Footer = () => {
           </motion.a>
 
           <motion.a 
-            href="https://linkedin.com/in/yourlinkedin" 
+            href="https://linkedin.com/in/jithugirish1" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-headline hover:text-primary transition-colors duration-300"
@@ -39,13 +39,13 @@ const Footer = () => {
           </motion.a>
 
           <motion.a 
-            href="https://twitter.com/yourtwitter" 
+            href="https://instagram.com/jithu_girish_" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-headline hover:text-primary transition-colors duration-300"
             whileHover={{ scale: 1.2 }}
           >
-            <FiTwitter size={22} />
+            <FiInstagram size={22} />
           </motion.a>
         </div>
       </motion.div>
