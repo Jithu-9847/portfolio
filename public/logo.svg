@@ -1,0 +1,24 @@
+<svg width="260" height="70" viewBox="0 0 260 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left part of closing tag "</" -->
+  <text x="10" y="50" font-family="monospace" font-weight="700" font-size="50" fill="#7f5af0">
+    &lt;/
+  </text>
+
+  <!-- Name with capital J -->
+  <text x="90" y="50" font-family="Segoe UI, Tahoma, Geneva, Verdana, sans-serif" font-weight="700" font-size="48" fill="url(#grad)">
+    Jithu
+  </text>
+
+  <!-- Right angle bracket ">" -->
+  <text x="225" y="50" font-family="monospace" font-weight="700" font-size="50" fill="#7f5af0">
+    &gt;
+  </text>
+
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7f5af0"></stop>
+      <stop offset="100%" stop-color="#4a90e2"></stop>
+    </linearGradient>
+  </defs>
+</svg>

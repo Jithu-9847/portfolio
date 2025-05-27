@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* Theme Variables */
+@layer base {
+  :root {
+    --color-background: #0f0f0f;
+    --color-paragraph: #c3c3c3;
+    --color-headline: #ffffff;
+    --color-primary: #7f5af0;
+    --color-secondary: #2cb67d;
+    --color-accent: #00eeff;
+    --color-darker: #1a1a1a;
+    --color-stroke: #333333;
+  }
+
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-paragraph);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  button, .button {
+    font-family: 'Fira Code', monospace;
+  }
+}
+
+/* Animations */
+@layer utilities {
+  @keyframes text-gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  @keyframes matrix {
+    to {
+      background-position: 1000% 0;
+    }
+  }
+
+  .animate-text-gradient {
+    animation: text-gradient 4s ease infinite;
+  }
+}
+
+.gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-accent));
+    animation: text-gradient 5s ease infinite; /* adjust if needed */
+  }
+  
+  @keyframes text-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .matrix-bg {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .matrix-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    z-index: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+    animation: matrix 20s linear infinite;
+  }
+  
+  @keyframes matrix {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 100% 100%;
+    }
+  }
+  
+  .neon-border {
+    position: relative;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  .neon-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 0.125rem;
+    border-radius: 0.5rem;
+    background: linear-gradient(45deg, #7f5af0, #2cb67d, #00eeff);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+  
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-headline);
+    font-family: monospace;
+  }
+  
+  button, .button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    transition: all 0.3s;
+  }
+  
+  .primary-button {
+    background-color: var(--color-primary);
+    color: var(--color-headline);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    transition: all 0.3s;
+  }
+  
+  .primary-button:hover {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    transition: all 0.3s;
+    background-color: #7f5af0b4; /* Define --color-primary-rgb if using this */
+  }
+  
+  .secondary-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    transition: all 0.3s;
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+  }
+  
+  .secondary-button:hover {
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.375rem;
+    font-family: monospace;
+    transition: all 0.3s;
+    background-color: #2cb67d3a; /* Same note as above */
+  }
+  
+  .card {
+    background-color: var(--color-darker);
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-stroke);
+    transition: all 0.3s;
+  }
+  
+  .card:hover {
+    border-color:var(--color-primary,0.5);
+  }
+  
+
+  .custom-gradient {
+    height: 100%;
+    background-image: linear-gradient(to right, var(--color-primary), var(--color-accent));
+  }
+  
