@@ -25,7 +25,7 @@ const letterVariants = {
 
 const Hero = () => {
   const [displayedText, setDisplayedText] = useState('');
-  const fullText = "Web Developer | Cybersecurity Enthusiast | Flutter Developer | AI Explorer";
+  const fullText = "Web Developer | Flutter Developer | AI Explorer";
   
   useEffect(() => {
     let timeout;
